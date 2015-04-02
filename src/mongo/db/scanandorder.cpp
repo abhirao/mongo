@@ -28,7 +28,7 @@
 
 namespace mongo {
 
-    const unsigned ScanAndOrder::MaxScanAndOrderBytes = 32 * 1024 * 1024;
+    const unsigned ScanAndOrder::MaxScanAndOrderBytes = 256 * 1024 * 1024;
 
     void ScanAndOrder::add(const BSONObj& o) {
         verify( o.isValid() );
